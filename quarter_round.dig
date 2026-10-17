@@ -27,6 +27,10 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
+          <string>small</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
           <string>Label</string>
           <string>a</string>
         </entry>
@@ -34,12 +38,20 @@
           <string>Bits</string>
           <int>32</int>
         </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>hex</intFormat>
+        </entry>
       </elementAttributes>
-      <pos x="200" y="180"/>
+      <pos x="160" y="180"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
+        <entry>
+          <string>small</string>
+          <boolean>true</boolean>
+        </entry>
         <entry>
           <string>Label</string>
           <string>b</string>
@@ -48,12 +60,20 @@
           <string>Bits</string>
           <int>32</int>
         </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>hex</intFormat>
+        </entry>
       </elementAttributes>
-      <pos x="200" y="220"/>
+      <pos x="160" y="220"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
+        <entry>
+          <string>small</string>
+          <boolean>true</boolean>
+        </entry>
         <entry>
           <string>Label</string>
           <string>c</string>
@@ -62,12 +82,20 @@
           <string>Bits</string>
           <int>32</int>
         </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>hex</intFormat>
+        </entry>
       </elementAttributes>
-      <pos x="200" y="260"/>
+      <pos x="160" y="260"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
+        <entry>
+          <string>small</string>
+          <boolean>true</boolean>
+        </entry>
         <entry>
           <string>Label</string>
           <string>d</string>
@@ -76,8 +104,12 @@
           <string>Bits</string>
           <int>32</int>
         </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>hex</intFormat>
+        </entry>
       </elementAttributes>
-      <pos x="200" y="300"/>
+      <pos x="160" y="300"/>
     </visualElement>
     <visualElement>
       <elementName>Add</elementName>
@@ -186,7 +218,7 @@
         </entry>
         <entry>
           <string>Bits</string>
-          <int>32</int>
+          <int>6</int>
         </entry>
       </elementAttributes>
       <pos x="440" y="240"/>
@@ -288,7 +320,7 @@
         </entry>
         <entry>
           <string>Bits</string>
-          <int>32</int>
+          <int>6</int>
         </entry>
       </elementAttributes>
       <pos x="760" y="280"/>
@@ -380,7 +412,7 @@
         </entry>
         <entry>
           <string>Bits</string>
-          <int>32</int>
+          <int>6</int>
         </entry>
       </elementAttributes>
       <pos x="440" y="480"/>
@@ -462,7 +494,7 @@
         </entry>
         <entry>
           <string>Bits</string>
-          <int>32</int>
+          <int>6</int>
         </entry>
       </elementAttributes>
       <pos x="760" y="520"/>
@@ -491,6 +523,10 @@
       <elementName>Out</elementName>
       <elementAttributes>
         <entry>
+          <string>small</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
           <string>Label</string>
           <string>A</string>
         </entry>
@@ -498,12 +534,20 @@
           <string>Bits</string>
           <int>32</int>
         </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>hex</intFormat>
+        </entry>
       </elementAttributes>
-      <pos x="920" y="400"/>
+      <pos x="960" y="400"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
       <elementAttributes>
+        <entry>
+          <string>small</string>
+          <boolean>true</boolean>
+        </entry>
         <entry>
           <string>Label</string>
           <string>B</string>
@@ -512,12 +556,20 @@
           <string>Bits</string>
           <int>32</int>
         </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>hex</intFormat>
+        </entry>
       </elementAttributes>
-      <pos x="920" y="440"/>
+      <pos x="960" y="440"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
       <elementAttributes>
+        <entry>
+          <string>small</string>
+          <boolean>true</boolean>
+        </entry>
         <entry>
           <string>Label</string>
           <string>C</string>
@@ -526,12 +578,20 @@
           <string>Bits</string>
           <int>32</int>
         </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>hex</intFormat>
+        </entry>
       </elementAttributes>
-      <pos x="920" y="480"/>
+      <pos x="960" y="480"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
       <elementAttributes>
+        <entry>
+          <string>small</string>
+          <boolean>true</boolean>
+        </entry>
         <entry>
           <string>Label</string>
           <string>D</string>
@@ -540,8 +600,69 @@
           <string>Bits</string>
           <int>32</int>
         </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>hex</intFormat>
+        </entry>
       </elementAttributes>
-      <pos x="920" y="520"/>
+      <pos x="960" y="520"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+      </elementAttributes>
+      <pos x="560" y="260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+      </elementAttributes>
+      <pos x="560" y="500"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="460"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>test0</string>
+        </entry>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>a          b          c          d          A          B          C          D
+0x11111111 0x01020304 0x9b8d6f43 0x01234567 0xea2a92f4 0xcb1cf8ce 0x4581472e 0x5881c4bb</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="1040" y="60"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -559,7 +680,7 @@
     </wire>
     <wire>
       <p1 x="900" y="480"/>
-      <p2 x="920" y="480"/>
+      <p2 x="960" y="480"/>
     </wire>
     <wire>
       <p1 x="220" y="320"/>
@@ -570,7 +691,7 @@
       <p2 x="880" y="160"/>
     </wire>
     <wire>
-      <p1 x="200" y="260"/>
+      <p1 x="160" y="260"/>
       <p2 x="360" y="260"/>
     </wire>
     <wire>
@@ -623,14 +744,14 @@
     </wire>
     <wire>
       <p1 x="880" y="520"/>
-      <p2 x="920" y="520"/>
+      <p2 x="960" y="520"/>
     </wire>
     <wire>
       <p1 x="180" y="360"/>
       <p2 x="900" y="360"/>
     </wire>
     <wire>
-      <p1 x="200" y="300"/>
+      <p1 x="160" y="300"/>
       <p2 x="320" y="300"/>
     </wire>
     <wire>
@@ -675,10 +796,10 @@
     </wire>
     <wire>
       <p1 x="320" y="400"/>
-      <p2 x="920" y="400"/>
+      <p2 x="960" y="400"/>
     </wire>
     <wire>
-      <p1 x="200" y="180"/>
+      <p1 x="160" y="180"/>
       <p2 x="240" y="180"/>
     </wire>
     <wire>
@@ -731,14 +852,14 @@
     </wire>
     <wire>
       <p1 x="860" y="440"/>
-      <p2 x="920" y="440"/>
+      <p2 x="960" y="440"/>
     </wire>
     <wire>
       <p1 x="540" y="440"/>
       <p2 x="840" y="440"/>
     </wire>
     <wire>
-      <p1 x="200" y="220"/>
+      <p1 x="160" y="220"/>
       <p2 x="220" y="220"/>
     </wire>
     <wire>
