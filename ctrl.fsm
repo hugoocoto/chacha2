@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fsm>
+  <states>
+    <state>
+      <values>st_idle=1</values>
+      <position x="240.0" y="240.0"/>
+      <number>0</number>
+      <name>IDLE</name>
+      <radius>70</radius>
+      <isInitial>true</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+    <state>
+      <values>st_gen=1</values>
+      <position x="420.0" y="540.0"/>
+      <number>1</number>
+      <name>GEN</name>
+      <radius>70</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+    <state>
+      <values>st_xor=1</values>
+      <position x="660.0" y="240.0"/>
+      <number>2</number>
+      <name>XOR</name>
+      <radius>70</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+  </states>
+  <transitions>
+    <transition>
+      <values></values>
+      <position x="329.2647" y="390.44116"/>
+      <fromState reference="../../../states/state"/>
+      <toState reference="../../../states/state[2]"/>
+      <condition>start</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="598.1707" y="436.5366"/>
+      <fromState reference="../../../states/state[2]"/>
+      <toState reference="../../../states/state[3]"/>
+      <condition>done</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="450.0" y="237.68538"/>
+      <fromState reference="../../../states/state[3]"/>
+      <toState reference="../../../states/state"/>
+      <condition>hs &amp; last</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="514.39026" y="369.51218"/>
+      <fromState reference="../../../states/state[3]"/>
+      <toState reference="../../../states/state[2]"/>
+      <condition>hs &amp; !last &amp; w15</condition>
+    </transition>
+  </transitions>
+</fsm>
